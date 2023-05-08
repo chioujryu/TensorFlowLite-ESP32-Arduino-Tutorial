@@ -1,0 +1,8 @@
+#ifndef TENSORFLOW_LITE_MICRO_EXAMPLES_HELLO_WORLD_FUNCTIONS_H_
+#define TENSORFLOW_LITE_MICRO_EXAMPLES_HELLO_WORLD_FUNCTIONS_H_
+
+extern int FindBiggestNumberIndex(int (&arr)[4]);
+extern int FindBiggestNumber(int (&arr)[4]);
+
+
+#endif  // TENSORFLOW_LITE_MICRO_EXAMPLES_HELLO_WORLD_FUNCTIONS_H_
