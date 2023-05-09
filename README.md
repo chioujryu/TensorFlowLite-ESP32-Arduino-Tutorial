@@ -1,6 +1,4 @@
-# **TensorFlowLite_ESP32_Tutorial**
-
-
+# **TensorFlowLite_ESP32_Arduino_Tutorial**
 
 ## **Overview**
 
@@ -25,6 +23,17 @@ You also need to learn about AI. Since training AI models requires data pre-proc
 
 ### Hello World
 Here's a basic tutorial, step by step, you'll learn how TensorFlow Lite works.
+
+## **Download this File**
+You can open the terminal and navigate to the Arduino library folder using the following command:
+```
+cd C:\Users\user\Documents\Arduino\libraries
+```
+Then, clone the file from the following GitHub repository into the Arduino library folder using the git clone command:
+```
+git clone https://github.com/chioujryu/TensorFlowLite-ESP32-Tutorial
+```
+
 
 ## **Deploy to ESP32**
 If you want to learn how to build an ESP32 environment, you can refer to the following link [Deploy to ESP32](examples\01_hello_world_sinewave\README.md)

@@ -24,7 +24,7 @@ int led = 3;   //定義輸出腳位
 bool initialized = false;
 
 
-void HandleOutput(float x_value,float y_value) {
+void HandleOutput(float x_value_1, float x_value_2, float y_value) {
 
   // Do this only once
   if (!initialized){
@@ -37,19 +37,16 @@ void HandleOutput(float x_value,float y_value) {
   int brightness = static_cast<int>(127.5f * (y_value + 1));
 
   // 只取0~255的值
-  int brightness_clamped = std::min(255,std::max(0,brightness));   
+  int brightness_clamped = std::min(255,std::max(0,brightness)); 
 
   // 讓燈泡亮
   analogWrite(led, brightness_clamped);
   
-  //印出 x_value 值以及 y_value
-  Serial.printf("x_value = %f,  y_value = %f \n\n",x_value,y_value);
+  //印出 x_value 值以及 y_value 以及PWM
+  Serial.printf("x_value_1 = %f,   x_value_2 = %f,   y_value = %f,  brightness_pwm = %d  ",x_value_1, x_value_2, y_value, brightness_clamped);
   Serial.flush();
   Serial.printf("\n");
   Serial.flush();
-
-  // 印出 LED PWM 的，也可以打開查看
-  //MicroPrintf("brightness = %d\n", brightness);
 
   delay(500);
 }

@@ -19,8 +19,8 @@ limitations under the License.
 // This constant represents the range of x values our model was trained on,
 // which is from 0 to (2 * Pi). We approximate Pi to avoid requiring additional
 // libraries.
-const float k_x_1 = 4.5f;
-const float k_x_2 = 12.f;
+const float k_x_1 = 4.5123f;
+const float k_x_2 = 12.66623f;
 
 // This constant determines the number of inferences to perform across the range
 // of x values defined above. Since each inference takes time, the higher this
