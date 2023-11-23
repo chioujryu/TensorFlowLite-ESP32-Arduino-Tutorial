@@ -22,7 +22,6 @@ limitations under the License.
 #include "tensorflow/lite/micro/system_setup.h" 
 #include "tensorflow/lite/schema/schema_generated.h"  //定義Tensorflow的
 
-#include "main_functions.h"
 #include "model.h"  //我們之前訓練好並且用xxd來轉換的sine模型
 #include "constants.h"
 #include "output_handler.h"

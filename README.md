@@ -19,24 +19,21 @@ Given that implementing deep learning and machine learning typically involves us
 ### **DL, ML Knowledge**
 You also need to learn about AI. Since training AI models requires data pre-processing and structuring AI deep neural networks, it is necessary to learn the Python language before delving into AI.
 
-## **Examples**
+## **Download this repository**
+If you are using a Windows system, please follow these steps:
 
-### Hello World
-Here's a basic tutorial, step by step, you'll learn how TensorFlow Lite works.
+1. Open the Terminal.
+2. Use the `cd` command to access the Arduino `libraries` folder. This folder is usually located at the default path:
+    ```
+    C:\Users\user\Documents\Arduino\libraries
+    ```
 
-## **Download this File**
-You can open the terminal and navigate to the Arduino library folder using the following command:
-```
-cd C:\Users\user\Documents\Arduino\libraries
-```
-Then, clone the file from the following GitHub repository into the Arduino library folder using the git clone command:
-```
-git clone https://github.com/chioujryu/TensorFlowLite-ESP32-Tutorial
-```
+3. Then, enter the following command to download the necessary files:
+    ```
+    git clone https://github.com/chioujryu/TensorFlowLite-ESP32-Tutorial
+    ```
 
-
-## **Deploy to ESP32**
-If you want to learn how to build an ESP32 environment, you can refer to the following link [Deploy to ESP32](examples\01_hello_world_sinewave\README.md)
+By completing these steps, you should be able to successfully download the required files.
 
 
 ## **Reference**

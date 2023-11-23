@@ -65,9 +65,12 @@ void setup() {
 
   // This pulls in all the operation implementations we need.
   // NOLINTNEXTLINE(runtime-global-variables)
-  // 包含全部的op方，這個方法比較占記憶體，如果不想占記憶，可以用下面的方法
+  // 包含全部的op，這個方法比較占記憶體，如果不想占記憶，可以用 MicroMutableOpResolver
   static tflite::AllOpsResolver resolver;    
-
+  /*    //MicroMutableOpResolver 的方法，這樣比較不占記憶體
+  static tflite::MicroMutableOpResolver<1> resolver;
+  resolver.AddFullyConnected();  
+  */
 
   // Build an interpreter to run the model with.
   static tflite::MicroInterpreter static_interpreter(
